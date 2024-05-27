@@ -10,5 +10,7 @@
     <color name="accent">#85FF4B</color>
     <color name="red">#FA5B3F</color>
     <color name="grey">#494949</color>
-    <color name="blue">#FF033A8C</color>
+    <color name="lavender">#85FF4B</color>
+    <color name="blue">#4B72FF</color>
+    <color name="green">#2CB331</color>
 </resources>

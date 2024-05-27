@@ -4,21 +4,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E2429A43"
     tools:context=".HomeFragment">
 
     <TextView
-        android:id="@+id/homeFragment"
-        android:layout_width="wrap_content"
+        android:id="@+id/homeTextview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Fragment"
-        android:textColor="#43a047"
-        android:textSize="40sp"
-        android:textStyle="italic|bold"
+        android:fontFamily="@font/poppinsbold"
+        android:text="CleanUp - Level Up"
+        android:textAlignment="center"
+        android:textColor="#E6DB0C"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnImageCap"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:layout_width="152dp"
+        android:layout_height="97dp"
+        android:src="@drawable/saveearth"
+        app:layout_constraintBottom_toTopOf="@+id/btnImageCap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTextview"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <Button
+        android:id="@+id/btnImageCap"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_btn"
+        android:text="Capture Image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/btnRank"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_btn"
+        android:text="See Your Ranking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageCap"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <Button
+        android:id="@+id/btnLeaderBoard"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/round_btn"
+        android:text="View The Leaderboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRank" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
