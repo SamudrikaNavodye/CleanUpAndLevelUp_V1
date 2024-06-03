@@ -45,7 +45,7 @@ public class LoginSuccessActivity extends AppCompatActivity implements BottomNav
     HomeFragment homeFragment = new HomeFragment();
     ProfileFragment profileFragment = new ProfileFragment();
     SettingsFragment settingsFragment = new SettingsFragment();
-
+    CameraFragment cameraFragment = new CameraFragment();
 
 
     // override the onOptionsItemSelected()
@@ -77,6 +77,13 @@ public class LoginSuccessActivity extends AppCompatActivity implements BottomNav
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.flFragment, profileFragment)
+                        .commit();
+                return true;
+
+            case R.id.camera:
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.flFragment, cameraFragment)
                         .commit();
                 return true;
 
